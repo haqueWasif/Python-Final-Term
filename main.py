@@ -26,8 +26,8 @@ def main():
                 email = input('Email: ')
                 password = input('Password: ')
                 address = input('Address: ')
-                account_type = input('Account Type: ')
-                bank_name = input('Bank: ')
+                account_type = input('Account Type (type Savings or Current): ')
+                bank_name = input('Bank (type Bank name from the available Banks in the list ex: Brac Bank): ')
 
                 bank_found = False
                 for bank in bank_list:
@@ -52,8 +52,8 @@ def main():
 
                     email  = input('Email: ')
                     password = input('Password: ')
-                    account_type = input('Account Type: ')
-                    bank_name = input('Bank: ')
+                    account_type = input('Account Type (type Savings or Current): ')
+                    bank_name = input('Bank (type Bank name from the available Banks in the list ex: Brac Bank): ')
 
                     for bank in bank_list:
                         if(bank.name == bank_name):
@@ -101,8 +101,8 @@ def main():
 
                     email  = input('Email: ')
                     password = input('Password: ')
-                    account_type = input('Account Type: ')
-                    bank_name = input('Bank: ')
+                    account_type = input('Account Type (type Savings or Current): ')
+                    bank_name = input('Bank (type Bank name from the available Banks in the list ex: Brac Bank): ')
 
                     account_matched = False
                     other_account = None
@@ -149,7 +149,7 @@ def main():
                 email = input('Email: ')
                 password = input('Password: ')
                 address = input('Address: ')
-                bank_name = input('Bank: ')
+                bank_name = input('Bank (type Bank name from the available Banks in the list ex: Brac Bank): ')
 
 
                 bank_found = False
@@ -176,7 +176,7 @@ def main():
                     name = input('Name: ')
                     email  = input('Email: ')
                     password = input('Password: ')
-                    bank_name = input('Bank: ')
+                    bank_name = input('Bank (type Bank name from the available Banks in the list ex: Brac Bank): ')
 
                     for bank in bank_list:
                         if(bank.name == bank_name):
@@ -211,7 +211,7 @@ def main():
                     
                     name = input('Name: ')
                     email  = input('Email: ')
-                    account_type = input('Account Type: ')
+                    account_type = input('Account Type (type Savings or Current): ')
 
                     user_account = None
                     account_matched = False
@@ -248,7 +248,7 @@ def main():
                         feature = int(input('Turn loan feature On or Off (1 or 0): '))
                         
                         name = input('Enter user name: ')
-                        account_type = input('Enter account type: ')
+                        account_type = input('Account Type (type Savings or Current): ')
 
                         for user in admin.view_accounts():
                             if user.name == name and user.account_type == account_type:
